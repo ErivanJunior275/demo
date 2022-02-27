@@ -1,4 +1,4 @@
-package br.com.example.demo.dto.reponse;
+package br.com.example.demo.dto.response;
 
 import java.util.ArrayList;
 import java.util.List;

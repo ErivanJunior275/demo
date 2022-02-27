@@ -3,8 +3,8 @@ package br.com.example.demo.dto.mapper;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.example.demo.dto.reponse.AlunoResponseDTO;
 import br.com.example.demo.dto.request.AlunoRequestDTO;
+import br.com.example.demo.dto.response.AlunoResponseDTO;
 import br.com.example.demo.model.Aluno;
 import br.com.example.demo.util.GeradorMatriculaUtil;
 

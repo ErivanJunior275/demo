@@ -1,4 +1,4 @@
-package br.com.example.demo.dto.reponse;
+package br.com.example.demo.dto.response;
 
 public class ErrorResponseDTO {
 	

@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import br.com.example.demo.dto.reponse.ErrorResponseDTO;
-import br.com.example.demo.dto.reponse.ResponseDTO;
+import br.com.example.demo.dto.response.ErrorResponseDTO;
+import br.com.example.demo.dto.response.ResponseDTO;
 
 @RestControllerAdvice
 public class ErrorValidationHandler {

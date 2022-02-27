@@ -1,6 +1,6 @@
 package br.com.example.demo.dto.mapper;
 
-import br.com.example.demo.dto.reponse.AlunoDetalheResponseDTO;
+import br.com.example.demo.dto.response.AlunoDetalheResponseDTO;
 import br.com.example.demo.model.Aluno;
 
 public class AlunoDetalheResponseDTOMapper {

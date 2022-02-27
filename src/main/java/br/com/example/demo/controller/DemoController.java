@@ -21,10 +21,10 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import br.com.example.demo.constants.DemoConstants;
-import br.com.example.demo.dto.reponse.AlunoDetalheResponseDTO;
-import br.com.example.demo.dto.reponse.AlunoResponseDTO;
-import br.com.example.demo.dto.reponse.ResponseDTO;
 import br.com.example.demo.dto.request.AlunoRequestDTO;
+import br.com.example.demo.dto.response.AlunoDetalheResponseDTO;
+import br.com.example.demo.dto.response.AlunoResponseDTO;
+import br.com.example.demo.dto.response.ResponseDTO;
 import br.com.example.demo.helper.DemoHelper;
 
 @RestController
@@ -33,6 +33,13 @@ public class DemoController {
 	
 	@Autowired
 	private DemoHelper demoHelper;
+	
+	@GetMapping(path="/healthCheck")
+	public ResponseEntity<String> healthCheck() {
+		String ok = "ok";
+		
+		return ResponseEntity.ok(ok);
+	}
 	
 	@GetMapping(produces=DemoConstants.APPLICATION_JSON)
 	public ResponseEntity<ResponseDTO<AlunoResponseDTO>> listaAlunos(@RequestParam(name="nome", required=false) String nome) {
